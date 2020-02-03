@@ -1,0 +1,82 @@
+@import "./variable.less";
+/*根据dpr计算font-size*/
+.font_dpr(@font-size){
+  font-size: @font-size;
+  // [data-dpr="2"] & { font-size: @font-size * 2;}
+  // [data-dpr="3"] & { font-size: @font-size * 3;}
+}
+/*通过该函数设置字体大小，后期方便统一管理；*/
+.font_size(@size){
+  .font_dpr(@size);
+}
+
+//常用字体配置
+.font-xs{
+  .font_size(@font_xs;);
+  line-height: @line_height_xs;
+}
+
+.font-xs{
+  .font_size(@font_xs;);
+  line-height: @line_height_xs;
+}
+
+.font-s{
+  .font_size(@font_s;);
+  line-height: @line_height_s;
+}
+
+.font-m{
+  .font_size(@font_m;);
+  line-height: @line_height_m;
+}
+
+.font-l{
+  .font_size(@font_l;);
+  line-height: @line_height_l;
+}
+
+.font-xl{
+  .font_size(@font_xl;);
+  line-height: @line_height_xl;
+}
+
+.font-xxl{
+  .font_size(@font_xxl;);
+  line-height: @line_height_xxl;
+}
+
+
+
+//常用的flex布局
+
+.flex-row-centerxy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-centerx{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-centerxy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-centerx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
