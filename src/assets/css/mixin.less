@@ -1,14 +1,5 @@
 @import "./variable.less";
-/*根据dpr计算font-size*/
-.font_dpr(@font-size){
-  font-size: @font-size;
-  // [data-dpr="2"] & { font-size: @font-size * 2;}
-  // [data-dpr="3"] & { font-size: @font-size * 3;}
-}
-/*通过该函数设置字体大小，后期方便统一管理；*/
-.font_size(@size){
-  .font_dpr(@size);
-}
+
 
 //常用字体配置
 .font-xs{

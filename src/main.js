@@ -4,7 +4,9 @@ import "element-ui/lib/theme-chalk/index.css"; // 修改主题改这里
 import App from "./App.vue";
 import api from "./api/index";
 import router from "./router";
+import fastclick from "fastclick";
 
+fastclick.attach(document.body);
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
 Vue.prototype.$api = api;
